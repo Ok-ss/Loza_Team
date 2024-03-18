@@ -72,33 +72,37 @@
                 </nav>
         </div>
         <style>
-            .image-container {
+            .container {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                height: 100vh; /* Adjust to your needs */
+                height: 100vh;
+                width: 100%;
+            }
+            .image-container {
+                top: 90px;
+                width: 40%;
             }
             .image-container img {
-                margin-top: 10%;
-                margin-left: 25%; /* Adjust the margin-left value as needed */
-                width: 60%; /* Adjust width as needed */
-                height: 100%; /* Maintain aspect ratio */
+                margin-top: 110px;
+                width: 100%;
+                height: auto;
             }
-            .text-center {
-                text-align: center;
+            .text-right {
+                width: 50%;
+                text-align: left;
                 font-size: 18px;
-                margin-top: 10px;
             }
         </style>
-        
-        
-        <div class="image-container">
-            <a href="https://apps.ucu.edu.ua" class="nav-item nav-link">
-                <img src="../static/img/work_process.png" alt="pan_schr">
-            </a>
-
-            <div class="text-center">
-                Команда 9 запрошує вас покористуватись нашим вебзастосунком скретч карти для вин.
+        <div class="container">
+            <div class="image-container">
+                <a href="https://apps.ucu.edu.ua">
+                    <img src="../static/img/work_process.png" alt="pan_schr">
+                </a>
+            </div>
+            <div class="text-right">
+                Команда 9 запрошує Вас випробувати наш вебзастосунок скретч-карти вин, котрий, надіємось, стане Вашим супутником у винному світі, допоможе краще підбирати вина та відслідковувати прогрес.
+                <p>Для використання, будь ласка, зареєструйтесь :) </p>
             </div>
         </div>
     </body>
