@@ -142,7 +142,8 @@ body {
 }
 .v49_519 {
   width: 848px;
-  color: rgb(166, 14, 14);
+  -webkit-text-stroke: 2px rgb(181, 88, 88);
+  color: rgb(0, 0, 0);
   position: absolute;
   top: 455px;
   left: 600px;
@@ -181,6 +182,7 @@ body {
   text-align: left;
 }
 .v49_521 {
+  -webkit-text-stroke: 2px rgb(147, 50, 50);
   width: 700px;
   color: rgba(0,0,0,1);
   position: absolute;
