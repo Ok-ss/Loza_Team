@@ -130,7 +130,7 @@ def statistics(user_id:int) -> str:
     num_of_reviews_str = f"You've rated {num_of_reviews} wine{'' if num_of_reviews == 1 else 's'}"
     start_str = "Thank you for being a part of our community.\nYour presence has truly made a difference, and we appreciate the time you've spent with us.\nHere are your stats:"
     if len(unlocked_countries) >= 1:
-        unlocked_countries_str = f"You've unlocked the following unlocked countr{'ies' if len(unlocked_countries) > 1 else 'y'}: {', '.join(unlocked_countries)}"
+        unlocked_countries_str = f"You've unlocked the following countr{'ies' if len(unlocked_countries) > 1 else 'y'}: {', '.join(unlocked_countries)}"
     if unlocked_countries_str == '':
         addittional_str = "Explore more wines to get more personal data"
         final_str = f'{start_str}{num_of_reviews_str}\n{addittional_str}'
