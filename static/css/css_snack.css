@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v52_560 {
+  width: 100%;
+  height: 2939px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v52_561 {
+  width: 100px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 1183px;
+  overflow: hidden;
+}
+.v52_562 {
+  width: 104px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 1304px;
+  overflow: hidden;
+}
+.v52_563 {
+  width: 83px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 31px;
+  left: 11px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v52_564 {
+  width: 93px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 55px;
+  left: 1190px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v52_565 {
+  width: 86px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 31px;
+  left: 52px;
+  font-family: Italianno;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+.v52_566 {
+  width: 100px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 1058px;
+  overflow: hidden;
+}
+.v52_567 {
+  width: 91px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v52_568 {
+  width: 100px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 933px;
+  overflow: hidden;
+}
+.v52_569 {
+  width: 91px;
+  color: rgba(24,11,1,1);
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.text_1 {
+  width:auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 27%;
+  left: 550px;
+  font-size: 31px;
+  opacity: 1;
+  text-align: left;
+}
+.text_2 {
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 762px;
+  left: 550px;
+  font-size: 31px;
+  opacity: 1;
+  text-align: left;
+}
+.text_3 {
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1268px;
+  left: 550px;
+  font-size: 31px;
+  opacity: 1;
+  text-align: left;
+}
+.text_4 {
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1817px;
+  left: 550px;
+  font-size: 31px;
+  opacity: 1;
+  text-align: left;
+}
+.text_5 {
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 2400px;
+  left: 550px;
+  font-size: 31px;
+  opacity: 1;
+  text-align: left;
+}
+.Nuts {
+  width: 501px;
+  height: 519px;
+  background: url("../img/nuts.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 619px;
+  left: +26px;
+  overflow: hidden;
+}
+.bruschetta {
+  width: 501px;
+  height: 474px;
+  background: url("../img/bruschetta.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 111px;
+  left: 10px;
+  overflow: hidden;
+}
+.fruits {
+  width: 540px;
+  height: 474px;
+  background: url("../img/fruits.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2289px;
+  left: 5px;
+  overflow: hidden;
+}
+.kovbasa {
+  width: 540px;
+  height: 474px;
+  background: url("../img/kovbasa.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1160px;
+  left: 10px;
+  overflow: hidden;
+}
+.v54_586 {
+  width: 540px;
+  height: 475px;
+  background: url("../img/fr_fr.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1709px;
+  left: 10px;
+  overflow: hidden;
+}

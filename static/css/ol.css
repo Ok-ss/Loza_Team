@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v26_344 {
+  width: 100%;
+  height: 1132px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v26_345 {
+  width: 100px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 957px;
+  overflow: hidden;
+}
+.v26_346 {
+  width: 104px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 836px;
+  overflow: hidden;
+}
+.v26_347 {
+  width: 83px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 31px;
+  left: 11px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v26_348 {
+  width: 93px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 55px;
+  left: 950px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v26_349 {
+  width: 86px;
+  color: #d31515;
+  position: absolute;
+  top: 31px;
+  left: 52px;
+  font-family: Italianno;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+.v26_350 {
+  width: 100px;
+  height: 100px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 1058px;
+  overflow: hidden;
+}
+.v26_351 {
+  width: 91px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v26_352 {
+  width: 100px;
+  height: 120px;
+  background: rgba(224,201,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 21px;
+  left: 933px;
+  overflow: hidden;
+}
+.v26_353 {
+  width: 91px;
+  color: rgba(24,11,1,1);
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  font-family: Open Sans;
+  font-weight: Light;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v49_517 {
+  width: 90;
+  height: 90;
+  background: url("../images/v49_517.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  overflow: hidden;
+}
+.v49_518 {
+  width: 90;
+  height: 90;
+  background: url("../images/v49_518.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 705px;
+  left: 60px;
+  overflow: hidden;
+}
+.v49_519 {
+  width: 848px;
+  color: rgb(166, 14, 14);
+  position: absolute;
+  top: 455px;
+  left: 600px;
+  font-family: Open Sans;
+  font-weight: Bold;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+/* v49_520 З якого стакана питимеш? */
+.v49_520 {
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 200px;
+  left: 550px;
+  right: 40px;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v52_525 {
+  /* закуска текст */
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 799px;
+  left: 550px;
+  right: 40px;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v49_521 {
+  width: 700px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1050px;
+  left: 600px;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
