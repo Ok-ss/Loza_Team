@@ -31,8 +31,12 @@
                 margin-right: 20px;
             }
             .text {
-                text-align: justify;
+                text-align: center;
                 margin-top: 20%; /* Зсув тексту до низу на 40 пікселів */
+                justify-content: center;
+                margin-right: 30%;
+                font-size: 22px;
+                color:black; 
             }
         </style>
     </head>
@@ -85,13 +89,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="photo">
-                        <img src="../static/img/pan_schrek.png" alt="фото">
+                        <img src="../static/img/cal_png.png" alt="фото">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="text">
                         {% for line in info.split('\n')%}
-                        <br>{{line}}</br>
+                        <b><br>{{line}}</br></b>
                         {% endfor %}
                     </div>
                 </div>
