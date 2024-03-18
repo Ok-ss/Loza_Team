@@ -82,10 +82,17 @@ def statistics(user_id:int) -> str:
     Return the string of information about user
 
     RETURN EXAMPLE:
-        Here are the following unlocked countries: Italy, Germany
+        Thank you for being a part of our community.
+        Your presence has truly made a difference, and we appreciate the time you've spent with us.
+        Here are your stats:
+        You've rated 2 wines
+        You've unlocked the following countries: Italy, Germany
         Favourite wine color: white
         Favourite wine attribute: semisweet
     OR:
+        Thank you for being a part of our community.
+        Your presence has truly made a difference, and we appreciate the time you've spent with us.
+        Here are your stats:
         You've rated 0 wines
         Explore more wines to get more personal data
     """
@@ -121,17 +128,16 @@ def statistics(user_id:int) -> str:
 
     unlocked_countries_str = ''
     num_of_reviews_str = f"You've rated {num_of_reviews} wine{'' if num_of_reviews == 1 else 's'}"
-
+    start_str = "Thank you for being a part of our community.\nYour presence has truly made a difference, and we appreciate the time you've spent with us.\nHere are your stats:"
     if len(unlocked_countries) >= 1:
-        unlocked_countries_str = f"Here {'are' if len(unlocked_countries) > 1 else 'is'} the following unlocked countr{'ies' if len(unlocked_countries) > 1 else 'y'}: {', '.join(unlocked_countries)}"
-
+        unlocked_countries_str = f"You've unlocked the following unlocked countr{'ies' if len(unlocked_countries) > 1 else 'y'}: {', '.join(unlocked_countries)}"
     if unlocked_countries_str == '':
         addittional_str = "Explore more wines to get more personal data"
-        final_str = f'{num_of_reviews_str}\n{addittional_str}'
+        final_str = f'{start_str}{num_of_reviews_str}\n{addittional_str}'
     else:
         fav_color_str = f"Favourite wine color{'s' if len(max_colors) > 1 else ''}: {', '.join(max_colors)}"
         fav_attribute_str = f"Favourite wine attribute{'s' if len(max_attributes) > 1 else ''}: {', '.join(max_attributes)}"
-        final_str = f'{unlocked_countries_str}\n{fav_color_str}\n{fav_attribute_str}'
+        final_str = f'{start_str}\n{num_of_reviews_str}\n{unlocked_countries_str}\n{fav_color_str}\n{fav_attribute_str}'
 
     return final_str
 
