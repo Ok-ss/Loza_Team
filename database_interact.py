@@ -133,7 +133,7 @@ def statistics(user_id:int) -> str:
         unlocked_countries_str = f"You've unlocked the following countr{'ies' if len(unlocked_countries) > 1 else 'y'}: {', '.join(unlocked_countries)}"
     if unlocked_countries_str == '':
         addittional_str = "Explore more wines to get more personal data"
-        final_str = f'{start_str}{num_of_reviews_str}\n{addittional_str}'
+        final_str = f'{start_str}\n{num_of_reviews_str}\n{addittional_str}'
     else:
         fav_color_str = f"Favourite wine color{'s' if len(max_colors) > 1 else ''}: {', '.join(max_colors)}"
         fav_attribute_str = f"Favourite wine attribute{'s' if len(max_attributes) > 1 else ''}: {', '.join(max_attributes)}"
