@@ -89,7 +89,7 @@ def info_about_country(country):
             if form_name == '2nd wine':
                 text = request.form['review2']
                 rate = request.form['rating2']
-                add_review(u_id, wines[0], text, int(rate))
+                add_review(u_id, wines[1], text, int(rate))
             
             for review in get_reviews(u_id):
                     if review['wine_id'] == wines[1]:
