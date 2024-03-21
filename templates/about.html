@@ -43,8 +43,7 @@
                     <span class="fa fa-bars"></span>
                 </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
+             <div class="navbar-nav ms-auto py-0">
                 <!-- <a href="/" class="nav-item nav-link active">Home</a> -->
                 <a href="/" class="nav-item nav-link">
                     <font color="black" face="itallianco">
@@ -76,21 +75,28 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                height: 100vh;
+                /* height: 50vh; */
                 width: 100%;
             }
             .image-container {
+                margin-top: 110px;
                 top: 90px;
                 width: 40%;
+                
             }
             .image-container img {
-                margin-top: 110px;
+                /* margin-top: 110px; */
                 width: 100%;
-                height: auto;
+                /* height: 50%; */
+                transform: (50%);
             }
             .text-right {
                 width: 50%;
-                text-align: left;
+                height: 100%;
+                display: flex;
+                flex-direction: column; /* Задаємо напрямок стовпця для flexbox */
+                justify-content: center; /* Центруємо контент по вертикалі */
+                align-items: left; /* Вирівнюємо контент зліва */
                 font-size: 18px;
             }
         </style>
@@ -103,6 +109,8 @@
             <div class="text-right">
                 Команда 9 запрошує Вас випробувати наш вебзастосунок скретч-карти вин, котрий, надіємось, стане Вашим супутником у винному світі, допоможе краще підбирати вина та відслідковувати прогрес.
                 <p>Для використання, будь ласка, зареєструйтесь :) </p>
+                <p>Наш застосунок дає можливість зберігати враження від кожної дегустації.</p>
+                <p>Ми будемо раді почути ваші враження та отримати ваші відгуки!</p>
             </div>
         </div>
     </body>
