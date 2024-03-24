@@ -75,20 +75,20 @@
             </nav>
             <div class="header-carousel owl-carousel">
                 <div class="header-carousel-item">
-                    <img src="../static/img/carousel-1.png" class="img-fluid w-100" alt="Image">
+                    <img src="../static/img/carr_2.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="carousel-caption-content p-3">
                             <h1 class="display-1 text-capitalize text-white mb-4 wow fadeInUp" data-wow-delay="0.3s"></h1>
-                            <!-- <p class="mb-5 fs-5 wow fadeInUp" data-wow-delay="0.1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
+                            <p class="mb-5 fs-5 wow fadeInUp"><h1 style="color: white; font-size: 65px;">Your wine. Perfected</h1></p>
                         </div>
                     </div>
                 </div>
                 <div class="header-carousel-item">
-                    <img src="../static/img/carousel2.png" class="img-fluid w-100" alt="Image">
+                    <img src="../static/img/tysk.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="carousel-caption-content p-3">
                             <h1 class="display-1 text-capitalize text-white mb-4 wow fadeInUp" data-wow-delay="0.3s"></h1>
-                            <!-- <p class="mb-5 fs-5 wow fadeInUp" data-wow-delay="0.1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
+                            <p class="mb-5 fs-5 wow fadeInUp"><h1 style="color: white; font-size: 65px;">Your wine. Perfected</h1></p>
                         </div>
                     </div>
                 </div>
@@ -101,43 +101,46 @@
                 justify-content: center;
                 align-items: center;
             }
+        
             .image-column {
                 flex: 1;
                 padding: 10px;
                 text-align: center;
             }
+        
             .image-column img {
-                width: 400px;
-                height:400px;
-                height: auto;
+                width: 100%; /* Робимо ширину картинки 100% від блоку */
+                max-width: 400px; /* Максимальна ширина картинки для запобігання її розтягненню */
+                height: auto; /* Автоматично розраховуємо висоту, щоб зберегти пропорції */
             }
+        
             .image-caption {
                 font-size: 30px;
                 margin-top: 5px;
             }
-
+        
+            @media (max-width: 768px) { /* Медіа-запит для екранів шириною до 768px */
+                .image-row {
+                    flex-direction: column; /* Змінюємо напрямок блоків на вертикальний стовпець */
+                }
+                .image-column {
+                    width: 100%; /* Збільшуємо ширину колонок на всю доступну ширину */
+                }
+            }
         </style>
+        
         <div class="image-row">
             <div class="image-column">
                 <div class="image-caption">
                     <font color="black" face="itallianco">
-                        <b><i><a href="\">Map of wines</a></i></b>
+                        <b><i><a href="map_of_wines">Map of wines</a></i></b>
                     </font>
                 </div>
                 <a href="map_of_wines" class="nav-item nav-link">
                         <img src="../static/img/main_page_jed.png" alt="Map of wines">
                 </a>
             </div>
-            <!-- <div class="image-column">
-                <div class="image-caption">
-                    <font color="black" face="itallianco">
-                        <b><i>Find new wine</i></b>
-                    </font>
-                </div>
-                <a href="contact" class="nav-item nav-link">
-                        <img src="../static/img/main_page_dvo.png" alt="Find new wine">
-                </a>
-            </div> -->
+
             <div class="image-column">
                 <div class="image-caption">
                     <font color="black" face="itallianco">
@@ -161,7 +164,5 @@
         
          <!-- щоб карусель працювала -->
         <script src="../static/js/main.js"></script> 
-
     </body>
-
 </html>
