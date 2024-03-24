@@ -1,130 +1,156 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>info_best_for</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Loza</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
-    <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
 
-    <!-- Libraries Stylesheet -->
-    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="..static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="..static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="../static/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet" />
-    <link href="../static/css/ol.css" rel="stylesheet" />
-    <title>info_best_for</title>
-    <style>
-        .rectangle-div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-    </style>
-</head>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
-<body  style="background-color:bisque;">
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-            <a href="/" class="navbar-brand p-0">
-                <!-- <i class="fas fa-star-of-life me-3"></i> -->
-                <h1 class="text-primary m-0">
-                    <font size="45" color="darkred" face="itallianco">
-                        <b><i>Loza</i></b>
-                    </font>
-                </h1>
-                <!-- <img src="../static/img/logo.png" alt="Logo"> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-            <!-- <a href="/" class="nav-item nav-link active">Home</a> -->
-            <a href="/" class="nav-item nav-link">
-                <font color="black" face="itallianco">
-                    <b><i>Home</i></b>
-                </font>
-            </a>
-                    <!-- <a href="about" class="nav-item nav-link">About</a> -->
-            <a href="/about" class="nav-item nav-link">
-                <font color="black" face="itallianco">
-                    <b><i>About</i></b>
+        <!-- Template Stylesheet -->
+        <link href="../static/css/style.css" rel="stylesheet">
+    </head>
+    <body  style="background-color:bisque;">
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="/" class="navbar-brand p-0">
+                    <!-- <i class="fas fa-star-of-life me-3"></i> -->
+                    <h1 class="text-primary m-0">
+                        <font size="45" color="darkred" face="itallianco">
+                            <b><i>Loza</i></b>
                         </font>
-            </a>
-                    <!-- <a href="service" class="nav-item nav-link">квіз</a> -->
-            </div>
-                {% if logged %}
-                <a href="/profile" class="nav-item nav-link">
+                    </h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+             <div class="navbar-nav ms-auto py-0">
+                <!-- <a href="/" class="nav-item nav-link active">Home</a> -->
+                <a href="/" class="nav-item nav-link">
                     <font color="black" face="itallianco">
-                        <b><i>Profile</i></b>
+                        <b><i>Home</i></b>
                     </font>
                 </a>
-                {% endif %}
-                {% if not logged %}
-                <a href="/login" class="btn btn-primary rounded-pill text-white py-1 px-6 flex-wrap flex-sm-shrink-0">Login</a>
-                {% endif %}
-            </div>
-        </nav>
+                        <!-- <a href="about" class="nav-item nav-link">About</a> -->
+                <a href="/about" class="nav-item nav-link">
+                    <font color="black" face="itallianco">
+                        <b><i>About</i></b>
+                            </font>
+                </a>
+                
+                    </div>
+                    {% if logged %}
+                    <a href="/profile" class="nav-item nav-link">
+                        <font color="black" face="itallianco">
+                            <b><i>Profile</i></b>
+                        </font>
+                    </a>
+                    {% endif %}
+                    {% if not logged %}
+                    <a href="/login" class="btn btn-primary rounded-pill text-white py-1 px-6 flex-wrap flex-sm-shrink-0">Login</a>
+                    {% endif %}
+                </nav>
+        </div>
+        <style>
+          .container {
+  padding-top: 60px; /* Верхній padding (не змінюється) */
+  padding-bottom: 54px; /* Нижній padding для відстані між контейнерами */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
 
-        <div class="rectangle-div">
-            <div class="v49_517">
-              <img src="../static/img/v49_517.png" alt="v49_517">
-            </div>
+          .image-container, .text-container {
+            width: 45%; /* Половина ширини контейнера */
+            margin: 10px; /* Додатковий відступ між контейнерами */
+            box-sizing: border-box; /* Враховує padding та border в обчисленні ширини */
+          }
           
-            <span class="v49_519">
-              <!-- Discover wine etiquette -->
-              <a href="/info_best_for/glasses" class="navbar-brand p-0">
-                <!-- <i class="fas fa-star-of-life me-3"></i> -->
-                <h1 class="text-primary m-0">
-                  <font size="64" color="black" face="open Sans">
-                    <b><i>Discover wine etiquette</i></b>
-                  </font>
-                </h1>
-                <!-- <img src="../static/img/logo.png" alt="Logo"> -->
-              </a>
-            </span>
-          
-            <span class="v49_520">
-              Обирати бокали для червоних вин з Бургундії чи Бордо, чим обмежитися у випадку з білими сухими, чи обирати для ігристих широку чашу по формі грудей Марії-Антуанетти?
-            </span>
-          
-            <span class="v52_525">
-              Поєднання їжі з напоями здається нам зовсім легкою справою, але це тільки на перший погляд. Адже головне завдання закусок – доповнювати смак вина, але ніяк не перебивати його.
-            </span>
-          </div>
-          
-          <div class="rectangle-div">
-            <div class="v49_518">
-              <img src="../static/img/v49_518.png" alt="v49_518">
-            </div>
-            <span class="v49_521">
-              <a href="info_best_for/snacks" class="navbar-brand p-0">
-                <!-- <i class="fas fa-star-of-life me-3"></i> -->
-                <h1 class="text-primary m-0">
-                  <font size="64" color="black" face="open Sans">
-                    <b><i>Reveal Snack Matches</i></b>
-                  </font>
-                </h1>
-                <!-- <img src="../static/img/logo.png" alt="Logo"> -->
-              </a>
-            </span>
-          </div>          
+          .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+          .text-container {
+            font-size: 30px;
+            color: black;
+            /* background-color: #f2f2f2; */
+            margin: auto;
+          }
+          .inside{
+            font-size: 32px;
+            color: rgb(107, 50, 50);
+            text-align: center;
+            background-color: #a83838d4;
+            border-radius: 40px;
+          }
+          @media (max-width: 768px) {
+            .text-container {
+            font-size: 18px;
+            color: black;
+            /* background-color: #f2f2f2; */
+          }
+          .inside{
+            font-size: 18px;
+            color: rgb(107, 50, 50);
+            text-align: center;
+            background-color: #a83838d4;
+            border-radius: 40px;
+          }
+          }
+          </style>
+          </head>
+          <body>
+          <!-- Перший контейнер -->
+  <div class="container">
+    <!-- Контейнер з зображенням -->
+    <div class="image-container">
+      <img src="../static/img/snack_info_best.png" alt="Фотографія">
     </div>
-</body>
+    <!-- Текстовий контейнер -->
+    <div class="text-container">
+      <p>Поєднання їжі з напоями здається нам зовсім легкою справою, але це тільки на перший погляд. Адже головне завдання закусок – доповнювати смак вина, але ніяк не перебивати його.</p>
+      <div class="inside">
+        <a href="/info_best_for/snacks"><p>Reveal Snack Matches</p></a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Другий контейнер -->
+  <div class="container">
+    <!-- Контейнер з зображенням -->
+    <div class="image-container">
+      <img src="../static/img/glasser.png" alt="Фотографія">
+    </div>
+    <!-- Текстовий контейнер -->
+    <div class="text-container">
+      <p>Обирати бокали для червоних вин з Бургундії чи Бордо, чим обмежитися у випадку з білими сухими, чи обирати для ігристих широку чашу по формі грудей Марії-Антуанетти?</p>
+      <div class="inside">
+        <a href="/info_best_for/glasses"><p>Discover wine etiquette</p></a>
+      </div>
+    </div>
+  </div>
+
+    </body>
 </html>
