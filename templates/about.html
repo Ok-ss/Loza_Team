@@ -75,19 +75,17 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                /* height: 50vh; */
                 width: 100%;
             }
             .image-container {
                 margin-top: 110px;
-                top: 90px;
+                /* top: 90px; */
                 width: 40%;
                 
             }
             .image-container img {
-                /* margin-top: 110px; */
                 width: 100%;
-                /* height: 50%; */
+                top: -90px;
                 transform: (50%);
             }
             .text-right {
@@ -99,7 +97,33 @@
                 align-items: left; /* Вирівнюємо контент зліва */
                 font-size: 18px;
             }
-        </style>
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin-top: -90px;
+                width: 100%;
+            }
+        
+            .image-container {
+                width: 100%;
+                text-align: center;
+            }
+        
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .text-right {
+                margin-top: 4%;
+                width: 100%;
+                font-size: 18px;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+        }
+    </style>
         <div class="container">
             <div class="image-container">
                 <a href="https://apps.ucu.edu.ua">
@@ -110,8 +134,9 @@
                 Команда 9 запрошує Вас випробувати наш вебзастосунок скретч-карти вин, котрий, надіємось, стане Вашим супутником у винному світі, допоможе краще підбирати вина та відслідковувати прогрес.
                 <p>Для використання, будь ласка, зареєструйтесь :) </p>
                 <p>Наш застосунок дає можливість зберігати враження від кожної дегустації.</p>
-                <p>Ми будемо раді почути ваші враження та отримати ваші відгуки!</p>
+                <p>Ми будемо раді почути ваші враження та отримати ваші відгуки! Ваші відгуки і рецензії є надзвичайно важливими для нас.</p>
             </div>
         </div>
+        
     </body>
 </html>
