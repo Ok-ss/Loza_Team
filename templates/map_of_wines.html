@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Loza</title>
+    <title>Map</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -72,66 +72,89 @@
             }
         </style> -->
         <style>
+            body {
+                background-color: bisque;
+                padding-top: 0px;
+                margin: 0;
+            }
+        
+            /* Стилі для блоку з фото вина та формою */
             /* Стилі для блоку з фото вина та формою */
             .wine-container {
-                position: absolute;
-                top: 10%;
-                right: 40px;
-                width: 35%;
-                height: 90%;
-                background-color: rgb(245, 255, 112);
-                border-radius: 15px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: rgb(245, 255, 112);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Дозволяє винам переходити на новий ряд при необхідності */
+            justify-content: center; /* Розміщення контейнерів з винами по краях */
+        }
+        
+        .inner-container {
+            width: 45%; /* Ширина внутрішнього контейнера */
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Встановлення внутрішнього контейнера у вигляді колонки */
+        }
+        
+        @media screen and (max-width: 768px) { /* Медіа-запит для мобільних пристроїв з шириною екрану 768px */
+            .wine-container {
+                flex-direction: space-between; /* Вина відображаються у вигляді колонки на мобільних пристроях */
             }
+        
             .inner-container {
-                margin-bottom: 50px;
-                padding: 20px;
-                display: flex;
-                align-items: center;
+                flex: 1 0 100%; /* Весь екран на мобільних пристроях */
+                margin: 0; /* Відступи не потрібні */
             }
-            .wine-photo {
-                margin-right: 20px;
-            }
+        }
+        
+        
+        .wine-photo {
+            margin-bottom: 20px;
+        }
+        
+        
             .text {
                 font-size: 20px; /* Розмір шрифту тексту */
+                text-align: center;
             }
+        
             .attribute {
                 font-style: italic;
+                text-align: center;
             }
+        
             .taste {
                 margin-top: 10px;
+                text-align: center;
             }
+        
             .review-form {
-                margin-top: 10px;
-            }
+            margin-top: auto; /* Розміщення форми огляду внизу по центру */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрування елементів по горизонталі */
+            text-align: center;
+        }
+        
             .review-form input[type="text"] {
                 width: 100%;
                 padding: 10px;
                 margin-top: 10px;
-            }
-            .povz1{
-            position: absolute;
-            top: 525px;
-            left: 180px;
-            width:50%;
+                text-align: center;
             }
         
-            .povz2{
-                position: absolute;
-                top: 38%;
-                left: 180px;
-                width:50%;
-            }
             .safe-button {
-        /* position: absolute; */
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: red;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 20px;
-        text-decoration: none;
-    }
+                background-color: red;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 20px;
+                text-decoration: none;
+                margin-top: 10px;
+                text-align: center;
+            }
         </style>
 </head>
 <body style="background-color:bisque; padding-top: 0px;">
@@ -181,10 +204,11 @@
     </div>
     <div>
         <!-- <h1>HTML5/JavaScript Map</h1> -->
-        <div style="max-width: 60%">
+        <div style="max-width: 90%; margin: 0 auto;">
             <div id="map">
             </div>
         </div>
+        
         <!-- <div>Please read the <a href="http://simplemaps.com/docs">documentation</a> to learn how to customize this map.</div> -->
     </div>
     <!-- Блок з фото вина та формою для відправки есе -->
