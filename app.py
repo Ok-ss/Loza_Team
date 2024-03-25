@@ -44,7 +44,7 @@ def map_of_wines():
 
         return render_template('map_of_wines.html', logged=logged, js_code = js_code)
     except:
-        return render_template('fail.html', message='Please sign in first')
+        return render_template('login.html', logged=logged, user_exists=True, password = True)
 
 @app.route('/map_of_wines/<country>', methods=['GET', 'POST'])
 def info_about_country(country):
