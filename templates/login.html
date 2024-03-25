@@ -26,6 +26,12 @@
         <!-- Template Stylesheet -->
         <link href="../static/css/login.css" rel="stylesheet">
         <link href="../static/css/style.css" rel="stylesheet">
+    <style>
+        .sing_up{
+        /* margin-right: 10px; border-radius: 5px; background-color: lightblue; color: white; */
+        background-color: #287ae6; color: white; padding: 10px; border: none; border-radius: 5px;
+        }
+    </style>
     </head>
     <body  style="background-color:bisque;">
         <!-- Navbar & Hero Start -->
@@ -84,7 +90,7 @@
 
     <div class="box">
         <div class="logo"></div>
-        <div class = 'sing_text'><h3>Sign In</h3></div>
+        <div class = 'sing_text'><h3>Sign in</h3></div>
 
     <form method="POST">
         <div class="inputBox">
@@ -109,7 +115,10 @@
                 <span style="font-weight: bold; color: red; text-decoration: underline;"> </p>Password incorrect</p></span>
         </div>
         {% endif %}
-        <input type="submit" name="sign-in" value="Sign In">
+        <input type="submit" name="sign-in" value="Sign in">
+        <a href="\register">
+            <input type="button" class="sing_up" value="Sign up">
+        </a>
       </form>
     </div>
 </body>
