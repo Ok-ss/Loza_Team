@@ -6,6 +6,7 @@ import sqlite3
 from python_classes.user import User
 from python_classes.wine import Wine
 import hashlib
+import re
 
 app = Flask(__name__)
 
@@ -142,6 +143,8 @@ def register():
         password_conf = request.form['password confirmation']
         if user_password != password_conf:
             return render_template('register.html', logged=logged, pass_conf = False)
+        if not re.match(r"^(?=.*[a-z].*[a-z])(?=.*[A-Z])(?=.*\d.*\d.*\d).*$", user_password):
+            return render_template('register.html', logged=logged, pass_conf = True, re=True)
         new_user = User(user_email, user_password)
         if get_id(new_user):
             return render_template('register.html', logged=logged, pass_conf = True, user_exists = True)

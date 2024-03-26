@@ -109,6 +109,9 @@
         {% if not pass_conf %}
         <h3 style="color: red;">Password should match the confirmation</h3>
         {% endif %}
+        {% if re %}
+        <h3 style="color: red;">Password should have at least 2 lowercase letters, 1 uppercase letter and 3 digits</h3>
+        {% endif %}
         <input type="submit" name="sign-in" value="Create account">
       </form>
       {% if user_exists %}
