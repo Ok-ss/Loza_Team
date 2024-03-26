@@ -236,6 +236,8 @@ def deleting():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('fail.html')
-
+@app.route('/dont_change_rewiev')
+def dont_change_rewiev():
+    return render_template('dont_change_rewiev.html')
 if __name__ == '__main__':
     app.run(debug=True)
