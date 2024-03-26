@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 import sqlite3
 from python_classes.user import User
 from python_classes.wine import Wine
-import json
+import hashlib
 
 app = Flask(__name__)
 
@@ -48,72 +48,72 @@ def map_of_wines():
 
 @app.route('/map_of_wines/<country>', methods=['GET', 'POST'])
 def info_about_country(country):
-    try:
-        global u_id
-        with open('static/js/mapdata.js', 'r', encoding='utf-8') as file_:
-            info = file_.readlines()
-        res = ''
-        unlocked = False
-        regions = get_user_information(u_id)['unlocked_regions']
-        for line in info:
-            if line.startswith('      name:') and line.split(':')[-1].strip(' ""') in regions:
-                unlocked = True
-                res += line
-            elif line.startswith('      color') and unlocked:
-                res += '      color: "blue"\n'
-                unlocked = False
-            else:
-                res += line
-            
-        js_code = res
+    # try:
+    global u_id
+    with open('static/js/mapdata.js', 'r', encoding='utf-8') as file_:
+        info = file_.readlines()
+    res = ''
+    unlocked = False
+    regions = get_user_information(u_id)['unlocked_regions']
+    for line in info:
+        if line.startswith('      name:') and line.split(':')[-1].strip(' ""') in regions:
+            unlocked = True
+            res += line
+        elif line.startswith('      color') and unlocked:
+            res += '      color: "blue"\n'
+            unlocked = False
+        else:
+            res += line
+        
+    js_code = res
 
 
-        wines = get_wine_id(country)
-        wines_info = list(map(get_wine_info, wines))
-        info_shortage = ''
-        wine_1_review = ''
-        wine_2_review = ''
-        if request.method =='POST':
-            form_name = request.form.get('wine')
-            if form_name == '1st wine':
-                text = request.form['review1']
-                rate = request.form['rating1']
-                add_review(u_id, wines[0], text, int(rate))
-                print(get_user_information(u_id)['unlocked_regions'])
+    wines = get_wine_id(country)
+    wines_info = list(map(get_wine_info, wines))
+    info_shortage = ''
+    wine_1_review = ''
+    wine_2_review = ''
+    if request.method =='POST':
+        form_name = request.form.get('wine')
+        if form_name == '1st wine':
+            text = request.form['review1']
+            rate = request.form['rating1']
+            add_review(u_id, wines[0], text, int(rate))
+            print(get_user_information(u_id)['unlocked_regions'])
 
-
-            for review in get_reviews(u_id):
-                if review['wine_id'] == wines[0]:
-                    wine_1_review = review['review']
-
-            if form_name == '2nd wine':
-                text = request.form['review2']
-                rate = request.form['rating2']
-                add_review(u_id, wines[1], text, int(rate))
-            
-            for review in get_reviews(u_id):
-                    if review['wine_id'] == wines[1]:
-                        wine_2_review = review['review']
-                
-            return render_template('map_of_wines.html', info_shortage = info_shortage, logged=logged,
-                                    wine_1 = wines_info[0], wine_2 = wines_info[1],
-                                    review_1 = wine_1_review, review_2 = wine_2_review,
-                                    js_code = js_code)
 
         for review in get_reviews(u_id):
             if review['wine_id'] == wines[0]:
                 wine_1_review = review['review']
 
+        if form_name == '2nd wine':
+            text = request.form['review2']
+            rate = request.form['rating2']
+            add_review(u_id, wines[1], text, int(rate))
+        
         for review in get_reviews(u_id):
-            if review['wine_id'] == wines[1]:
-                wine_2_review = review['review']
-
-        return render_template('map_of_wines.html', logged=logged,
+                if review['wine_id'] == wines[1]:
+                    wine_2_review = review['review']
+            
+        return render_template('map_of_wines.html', info_shortage = info_shortage, logged=logged,
                                 wine_1 = wines_info[0], wine_2 = wines_info[1],
                                 review_1 = wine_1_review, review_2 = wine_2_review,
                                 js_code = js_code)
-    except:
-        return render_template('fail.html', message='Please sign in first')
+
+    for review in get_reviews(u_id):
+        if review['wine_id'] == wines[0]:
+            wine_1_review = review['review']
+
+    for review in get_reviews(u_id):
+        if review['wine_id'] == wines[1]:
+            wine_2_review = review['review']
+
+    return render_template('map_of_wines.html', logged=logged,
+                            wine_1 = wines_info[0], wine_2 = wines_info[1],
+                            review_1 = wine_1_review, review_2 = wine_2_review,
+                            js_code = js_code)
+    # except:
+    #     return render_template('fail.html', message='Please sign in first')
 
 
 @app.route('/info_best_for')
@@ -147,6 +147,7 @@ def register():
             return render_template('register.html', logged=logged, pass_conf = True, user_exists = True)
         add_new_user(new_user)
         new_user.u_id = get_id(new_user)
+        new_user.username = f'user#{new_user.u_id}'
         u_id = get_id(new_user)
         # session['current_user'] = jsonify(new_user)
         logged = True
@@ -166,7 +167,9 @@ def log_in():
             return render_template('login.html', logged=logged, user_exists = False, password=True)
             ## do an html for this
         u_id = get_id(new_user)
-        if get_user_information(u_id)['password'] != user_password:
+        pass_bytes = user_password.encode('utf-8')
+        password_hash = hashlib.sha256(pass_bytes).hexdigest()
+        if get_user_information(u_id)['password'] != password_hash:
             return  render_template('login.html', logged=logged, user_exists = True, password=False)
         new_user.my_map.unlocked_regions = {region:get_wine_id(region) for region in get_user_information(u_id)['unlocked_regions']}
         new_user.my_reviews = {Wine(wine['wine_id']):wine['review'] for wine in get_reviews(u_id)}

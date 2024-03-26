@@ -203,7 +203,7 @@
                     Taste: {{ wine_1['taste'] }}
                 </div>
                 <div class="review-form">
-                    <form action="" method="POST">
+                    <form name="1st wine" method="POST">
                         {% if review_1 %}
                         <input type="text" id="editableInput" placeholder="{{ review_1 }}" oninput="handleInput(event)">
 
@@ -260,26 +260,28 @@
                     Taste: {{ wine_2['taste'] }}
                 </div>
                 <div class="review-form">
-                    <form action="" method="POST">
+                    <form name="2nd wine" method="POST">
                         {% if review_2 %}
                         <input type="text" id="editableInput" placeholder="{{ review_2 }}" oninput="handleInput(event)">
 
-                            <script>
-                                function handleInput(event) {
+                        <script>
+                            function handleInput(event) {
                                 var input = event.target;
                                 var placeholder = input.getAttribute('placeholder');
-                                
-                                if (input.value === '') {
+                        
+                                if (input.value === '' || input.value === placeholder) {
                                     input.classList.add('placeholder');
-                                    input.value = placeholder;
                                 } else {
                                     input.classList.remove('placeholder');
                                 }
-                                }
-
-                                // Initialize input with placeholder
+                            }
+                        
+                            // Initialize input with placeholder
+                            document.addEventListener("DOMContentLoaded", function() {
                                 handleInput({ target: document.getElementById('editableInput') });
-                            </script>
+                            });
+                        </script>
+
                         {% else %}
                         <input type="text" name="review2" placeholder="Enter your review here">
                         {% endif %}
