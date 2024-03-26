@@ -193,11 +193,13 @@ def profile():
     # reviews = [{'name':wine.name, 'review':u.my_reviews[wine], 'rating':u.wine_rating[wine]} for wine in u.my_reviews]
     try:
         global u_id
+        global logged
         if request.method == 'POST':
             form_name = request.form.get('prof_button')
             if form_name == 'Settings':
                 return redirect('/profile/settings')
             u_id = None
+            logged = None
             return redirect('/')
         print(get_user_information(u_id))
         username = get_user_information(u_id)['username']
