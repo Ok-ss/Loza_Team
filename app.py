@@ -150,9 +150,9 @@ def register():
             return render_template('register.html', logged=logged, pass_conf = True, user_exists = True)
         add_new_user(new_user)
         new_user.u_id = get_id(new_user)
-        new_user.username = f'user#{new_user.u_id}'
         u_id = get_id(new_user)
         # session['current_user'] = jsonify(new_user)
+        print(get_user_information(u_id)['username'])
         logged = True
         return redirect(f'/profile')
     return render_template('register.html', logged=logged, pass_conf = True)
@@ -177,10 +177,9 @@ def log_in():
         new_user.my_map.unlocked_regions = {region:get_wine_id(region) for region in get_user_information(u_id)['unlocked_regions']}
         new_user.my_reviews = {Wine(wine['wine_id']):wine['review'] for wine in get_reviews(u_id)}
         new_user.wine_rating = {Wine(wine['wine_id']):wine['rating'] for wine in get_reviews(u_id)}
-        new_user.username = user_email.split('@')[0]
         # session['current_user'] = jsonify(new_user)
         logged = True
-        print(new_user.__json__())
+        print(get_user_information(u_id))
         return redirect('/profile') #do the user id here? but how?
     return render_template('login.html', logged=logged, user_exists=True, password = True)
 
@@ -195,9 +194,14 @@ def profile():
     try:
         global u_id
         if request.method == 'POST':
-            return redirect('/profile/settings')
-
+            form_name = request.form.get('prof_button')
+            if form_name == 'Settings':
+                return redirect('/profile/settings')
+            u_id = None
+            return redirect('/')
+        print(get_user_information(u_id))
         username = get_user_information(u_id)['username']
+        print(username)
         reviews = get_reviews(u_id)[:3]
         return render_template('my_profile.html', username=username, logged=logged, reviews=reviews)
     except:
@@ -214,7 +218,6 @@ def settings():
             change_username(u_id, username)
         
         username = get_user_information(u_id)['username']
-        
         return render_template('settings.html', logged=logged, username=username)
     except:
         return render_template('fail.html', message='Please sign in first')

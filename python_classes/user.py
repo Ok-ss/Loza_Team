@@ -24,13 +24,14 @@ class User:
     
     def __init__(self, email:str, password:str) -> None:
         self.u_id = 0
+        self.username = email.split('@')[0]
         e_bites = email.encode('utf-8')
         e_hash = hashlib.sha256(e_bites).hexdigest()
         self.__email = e_hash
         pass_bytes = password.encode('utf-8')
         password_hash = hashlib.sha256(pass_bytes).hexdigest()
         self.__password = password_hash
-        self.username = ''
+        
         # self.reviewed_wines:list[Wine] = [] #do we need that if we have my_reviews
         self.my_reviews:dict[Wine:str] = {}
         self.wine_rating:dict[Wine:int] = {}
