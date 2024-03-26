@@ -165,7 +165,7 @@
             <!-- ваш логотип або текст -->
             <a href="/" class="navbar-brand p-0">
                 <h1 class="text-primary m-0">
-                    <font size="45" color="red" face="itallianco">
+                    <font size="45" color="darkred" face="itallianco">
                         <b><i>Loza</i></b>
                     </font>
                 </h1>
@@ -183,7 +183,7 @@
                         </font>
                     </a>
                     <a href="/about" class="nav-item nav-link">
-                        <font color="gold" face="itallianco">
+                        <font color="black" face="itallianco">
                             <b><i>About</i></b>
                         </font>
                     </a>
@@ -252,7 +252,7 @@
                         {% endif %}
                         <label for="rating1">Rating:</label>
                         <input type="range" id="rating1" name="rating1" value="rating1" min="1" max="5" step="1">
-                        <output for="rating1" id="rating-value1">3</output>
+                        <output for="rating1" id="rating-value1">0</output>
                         <button type="submit" class="safe-button" name="wine" value="1st wine">Save</button>
                     </form>
                 </div>
@@ -311,7 +311,7 @@
                         {% endif %}
                         <label for="rating2">Rating:</label>
                         <input type="range" id="rating2" name="rating2" value="rating2" min="1" max="5" step="1">
-                        <output for="rating2" id="rating-value2">3</output>
+                        <output for="rating2" id="rating-value2">0</output>
                         <button type="submit" class="safe-button" name="wine" value="2nd wine">Save</button>
                     </form>
                 </div>
@@ -324,6 +324,22 @@
     function updateRating(outputId, value) {
         document.getElementById(outputId).textContent = value;
     }
+</script>
+<script>
+    const ratingInput = document.getElementById('rating1');
+    const ratingOutput = document.getElementById('rating-value1');
+
+    ratingInput.addEventListener('input', function() {
+        ratingOutput.value = ratingInput.value;
+    });
+</script>
+<script>
+    const ratingInput_2 = document.getElementById('rating2');
+    const ratingOutput_2 = document.getElementById('rating-value2');
+
+    ratingInput_2.addEventListener('input', function() {
+        ratingOutput_2.value = ratingInput_2.value;
+    });
 </script>
 
     <!-- JavaScript Libraries -->
