@@ -4,11 +4,11 @@ Germany,Richard Böcking Riesling,Riesling,white,dry,citrus fruit titillates the
 France,Trimbach Gewurztraminer,Gewürztraminer,pink,dry,rose petals & sensual with scents of lychee
 France,Jean-Baptiste Pinot,Pinot Gris,pink,medium-dry,lotus flower or the infusion of jasmine
 Italy,Nicosia Bianco,White Blend,white,dry,pleasant hints of apple
-Italy,Terre di Giurfo Belsito,Frappato,red,dry,opens with aromas of cendied berry & white pepper & savory herb
+Italy,Terre di Giurfo Belsito,Frappato,red,dry,cendied berry & white pepper & savory herb
 Spain,Tandem Tempranillo-Merlot,Tempranillo-Merlot,red,dry,cherry & red fruit & strawberry
 Spain,Pradorey Finca Valdelayegua,Tempranillo Blend,yellow,dry,clove & charred wood & mint aromas
 Ukraine,Marengo Sparkling,Sparkling Blend,white,dry,pear & lemon & apple & arrowroot biscuit
-Ukraine,Marengo Bianco Sparkling,Sparkling Blend,white,medium-dry,arrowroot & pear & ripe yellow apple & white fleshed tropical fruit scents.
+Ukraine,Marengo Bianco Sparkling,Sparkling Blend,white,medium-dry,pear & ripe apple & white tropical fruit
 Romania,Cramele Recas Chardonnay,Chardonnay,yellow,dry,fresh orange & lemon & honeysuckle aromas
 Romania,Byzantium Valachia,Red Blend,red,dry,tobacco & mint & cherry & spice
 Czech Republic,Welschriesling,Welschriesling,white,dry,herb-inflected
@@ -21,19 +21,19 @@ Hungary,Samuel Tinon Megyer,Furmint,white,dry,citrus pith & freshly cut pineappl
 Hungary,Oremus Eszencia,Furmint,yellow,sweet,aromas & honey & wood & walnut & caramel
 Austria,Fuchs Grüner Veltliner,Grüner Veltliner,white,dry,green pear & ivy leaves & citrus notes
 Austria,Mariell Blaufränkisch,Blaufränkisch,dark ruby,dry,black cherry fruit
-Switzerland,Robert Gilliard Pinot Noir-Gamay,Pinot Noir-Gamay,red,sweet,mint & black raspberry & flavors of cherry & red raspberry & tobacco leaf
+Switzerland,Robert Gilliard Pinot Noir-Gamay,Pinot Noir-Gamay,red,sweet,mint & black raspberry & flavors of cherry
 Switzerland,Gantenbein Pinot Noir,Pinot Noir,red,dry,raspberry & strawberry & cherry
 Serbia,Milijan Jelić Morava,Morava,yellow,sweet,Japanese apple & ripe
-Serbia,Agrina Portuguiser Blauer ,Blauer Portugieser,dark ruby,medium-dry,red cherry & red raspberry plus lifted top notes of eucalyptus & mint
+Serbia,Agrina Portuguiser Blauer ,Blauer Portugieser,dark ruby,medium-dry,red cherry & red raspberry & eucalyptus & mint
 Bulgaria,Vino Veni Vidi Vici,Rosé,pink,dry,lemon zest & pink grapefruit & strawberry
-Bulgaria,Bulgariana Cabernet Sauvignon,Cabernet Sauvignon,dark ruby,dry,black cherry & black raspberry & coffee & freshly ground black pepper
+Bulgaria,Bulgariana Cabernet Sauvignon,Cabernet Sauvignon,dark ruby,dry,black cherry & raspberry & coffee & black pepper
 Slovakia,Château Bela Riesling,Riesling,white,medium-dry,honey & apples & petrol lead
 Croatia,Coronica Malvasia,Malvasia,white,dry,sweet-scented acacia & lemon pith & lemon blossom
 Croatia,Miloš Plavac Mali,Plavac Mali,red,dry,cranberry & black cherry & bramble
 Moldova,Château Feteascǎ Regalǎ,Feteascǎ Regalǎ,white,medium-dry,green apple
 Moldova,Lion-Gri Dry Chardonnay,Chardonnay,yellow,dry,passion fruit & pineapple
 Bosnia end Herzegovina,Winery Čitluk Vranac Vranec,Vranec,red,dry,Toasted oak & cedar
-Bosnia end Herzegovina,Winery Čitluk Blatina,Blatina,dark ruby,dry,red & black currant & traces of dried figs & roasted almonds & chocolate
+Bosnia end Herzegovina,Winery Čitluk Blatina,Blatina,dark ruby,dry,red & black currant & figs & roasted almonds & chocolate
 Slovenia,Ciringa Sauvignon Blanc,Sauvignon Blanc,white,dry,roasted nuts & dried herb
 Slovenia,Avia Hend Chardonnay,Chardonnay,white,dry,orange & vanilla & toasted almonds & citrus blossom
 Luxembourg,Domaines Vinsmoselle NV Pinot,White Blend,white,dry,ripe tannin
@@ -84,8 +84,8 @@ Norway,Rutini Collecien Gewerztraminer,-,white,dry,white flowers & peach & lyche
 Norway,Uko Estate Malbec,-,red,medium-dry,violet & dark cherries & plums & cedar & licorice
 San Marino,Sangiovese di San Marino,-,red,dry,chocolate & cherry & plumb
 San Marino,Sterpeto Riserva,-,red,dry,honey & stone fruits
-Sweden,Vingrden i Klagshamn Terra Scania,-,white,sweet,green apples & pears & gooseberries & fresh herbs & elderberries & citrus
-Sweden,Kullabergs Vingard Lyckeri,-,white,dry,barrel & green apples & pears & elder & citrus & almonds & herbs
+Sweden,Vingrden i Klagshamn Terra Scania,-,white,sweet,green apples & pears & gooseberries & citrus
+Sweden,Kullabergs Vingard Lyckeri,-,white,dry,barrel & green apples & pears & citrus & almonds & herbs
 Cyprus,Vouni Panayia Alina Xynisteri,-,white,dry,citrus & tropical fruits
 Cyprus,Tsiakkas Maratheftiko,-,red,dry,dark berries & spices
 Armenia,Zorah Karasi Areni Noir,-,red,dry,red berries & spices
